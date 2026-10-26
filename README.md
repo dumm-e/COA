@@ -4,26 +4,6 @@ Programs transcribed from `COA LAB MANUAL Expt 1 to 9 (2).pdf` for the requested
 
 ## DOS/MASM filenames
 
-If MASM or DOSBox reports that it cannot open one of the descriptive filenames, use the short 8.3-compatible `.ASM` copies below. DOS-era tools commonly expect filenames with at most eight characters before the extension. For example, from the folder containing the files, assemble `ALUADD.ASM` with `MASM ALUADD.ASM`.
-
-| Short filename | Descriptive program |
-|---|---|
-| `ALUADD.ASM` | Experiment 2 arithmetic operations |
-| `ALULOG.ASM` | Experiment 2 logical operations |
-| `HEXBCD.ASM` | Experiment 3 hexadecimal to BCD/display digits |
-| `ASCTBCD.ASM` | Experiment 3 manual's “ASCII to BCD” snippet (code displays packed BCD as ASCII) |
-| `BCDASCI.ASM` | Experiment 3 packed BCD to ASCII |
-| `BCDADD.ASM` | Experiment 4 BCD addition |
-| `STRDISP.ASM` | Experiment 5 display string |
-| `STRLEN.ASM` | Experiment 5 string length |
-| `STRREV.ASM` | Experiment 5 reverse string |
-| `BLKTRAN.ASM` | Experiment 6 block transfer |
-| `BLKEXCH.ASM` | Experiment 6 block exchange |
-| `SHAPES.ASM` | Experiment 7 draw shapes |
-| `FLAGS.ASM` | Experiment 9 display flags |
-| `CACHE.ASM` | Experiment 10 direct-mapped cache |
-
-The underscores in long filenames are not the likely problem: MASM/DOS filename compatibility is more often about the 8-character base-name limit or the source file not being in the mounted/current directory. These short copies avoid both long base names and underscores.
 
 | Experiment | Program | Source file |
 |---|---|---|
