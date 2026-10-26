@@ -1,4 +1,3 @@
-
 .MODEL SMALL
 .STACK 100H
 .DATA
@@ -12,7 +11,7 @@ MAIN PROC
     MOV AL, BLOCK
     XOR AH, AH
     DIV LINES
-    MOV BL, AH          ; Save remainder before INT 21H changes AH
+    MOV BL, AH          
     LEA DX, MSG
     MOV AH, 09H
     INT 21H
