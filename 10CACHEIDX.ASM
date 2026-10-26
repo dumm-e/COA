@@ -8,14 +8,13 @@
 MAIN PROC
     MOV AX, @DATA
     MOV DS, AX
-    MOV AL, BLOCK
-    XOR AH, AH
-    DIV LINES
-    MOV BL, AH          
     LEA DX, MSG
     MOV AH, 09H
     INT 21H
-    MOV DL, BL
+    MOV AL, BLOCK
+    XOR AH, AH
+    DIV LINES
+    MOV DL, AH
     ADD DL, '0'
     MOV AH, 02H
     INT 21H
