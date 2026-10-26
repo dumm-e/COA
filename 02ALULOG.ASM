@@ -1,4 +1,3 @@
-; Experiment 2: ALU logical operations
 .model small
 .code
     mov al, 06h
