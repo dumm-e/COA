@@ -1,23 +1,29 @@
 .MODEL SMALL
 .STACK 100H
+
 .DATA
     BLOCK DB 13
     LINES DB 4
-    MSG DB 'Cache line: $'
+    MSG DB 'Cache lines: $'
+
 .CODE
 MAIN PROC
     MOV AX, @DATA
     MOV DS, AX
+
     LEA DX, MSG
     MOV AH, 09H
     INT 21H
+
     MOV AL, BLOCK
-    XOR AH, AH
+    MOV AH, 0
     DIV LINES
+
     MOV DL, AH
-    ADD DL, '0'
+    ADD DL, 30H
     MOV AH, 02H
     INT 21H
+
     MOV AH, 4CH
     INT 21H
 MAIN ENDP
