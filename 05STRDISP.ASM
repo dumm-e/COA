@@ -1,4 +1,3 @@
-; Experiment 5: Display a string with DOS INT 21h
 .model small
 .data
     k1 db "Hello This is Kadambari here $"
